@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ALI from './comp/nav';
-import home from "./comp/Home";
+import ALI from './component/nav';
+import home from "./component/Home";
 import {BrowserRouter , Route} from 'react-router-dom';
-import about from "./comp/about";
-import blok from './comp/blolk';
+import about from "./component/about";
+import blok from './component/blolk';
 class App extends Component{
  render() {
    return (
