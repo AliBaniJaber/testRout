@@ -4,6 +4,7 @@ class about extends Component{
         return(
             <div>
                 about
+
             </div>
         )
     }
