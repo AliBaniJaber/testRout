@@ -1,22 +1,27 @@
 import React,{Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ALI from './component/nav';
-import home from "./component/Home";
-import {BrowserRouter , Route} from 'react-router-dom';
-import about from "./component/about";
-import blok from './component/blolk';
+import ComponentReact from './component/functioncomponent';
+import Student from './component/student';
+
+function aliattr(){
+ return <p> ali test function attr</p>
+}
+
+
+
 class App extends Component{
+
+ state=
+     {
+
+     };
+
+
  render() {
    return (
-       <BrowserRouter>
-           <div className="App">
-               <ALI/>
-               <Route exact path="/74" component={home}/>
-               <Route  path="/about" component={about}/>
-               <Route  path="/blok" component={blok}/>
-           </div>
-       </BrowserRouter>
+       <div>
+           <Student ID="1" name="ali" BD="1-17-1999"> </Student>
+
+       </div>
 
    );
  }

@@ -1,0 +1,9 @@
+.stu {
+    background: burlywood;
+    width: 50%;
+    font-size: 22px;
+    margin: 10px;
+    position: relative;
+    left: 50px;
+    height: 100px;
+}
