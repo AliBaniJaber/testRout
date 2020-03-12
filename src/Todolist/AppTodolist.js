@@ -1,9 +1,9 @@
- import React,{Component} from "react";
-
-
+import React,{Component} from "react";
+import ListTasks from "./ListTasks";
+import Addnewtaskitem from "./Addnewtaskitem";
+import "./css/AppTodolist.css";
 class AppTodolist extends Component
 {
-
     state=
     {
         newTask:"",
@@ -12,7 +12,6 @@ class AppTodolist extends Component
             {text:"node.js"},
         ]
     };
-
     complettask(index)
     {
         const todos=[...this.state.todos];
@@ -33,25 +32,19 @@ class AppTodolist extends Component
         this.setState({newTask:event.target.value});
 
     };
-
     addTask()
     {
         const todo=[...this.state.todos];
         todo.push({text:this.state.newTask});
         this.setState({todos:todo,newTask:""});
     }
-
-
-
     render() {
-
-
         return(
-            <div>
-                {this.state.todos.map((todo,index)=><li key={index}>{todo.text}
-                <button onClick={()=>{this.complettask(index)}}>Done</button></li>)}
-                <input onChange={this.addtonewtask} type="text"/>
-                <button onClick={this.addTask} addTask>Add Task</button>
+            <div className={"maindiv"}>
+                {this.state.todos.map((todo,index)=><ListTasks  key={index} todo={todo} complettask={()=>{this.complettask(index)}}/>)}
+
+             <br/>
+               <Addnewtaskitem  valueinput={this.state.newTask} addtonewtask={this.addtonewtask} addTask={this.addTask} />
             </div>)
     }
 }
