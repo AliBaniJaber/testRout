@@ -8,7 +8,7 @@ class Conditions extends Component{
             time : new Date
         }
 
-
+        
     }
 
 
