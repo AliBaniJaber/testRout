@@ -2,15 +2,13 @@ import React,{Component} from "react";
 import "./css/student.css";
 class student extends Component{
 
-    constructor(props) {
+    constructor(props)
+    {
         super(props);
         this.incremant=this.incremant.bind(this);
         this.changename=this.changename.bind(this);
     }
-
-
-    state=
-        {
+    state={
             age:20,
             user:
             {
@@ -26,8 +24,7 @@ class student extends Component{
 
 
         };
-
-     incremant ()
+    incremant ()
      {
          this.setState({age :this.state.age+1});
      }
@@ -41,9 +38,6 @@ class student extends Component{
         });
 
     }
-
-
-
     render()
     {
         return <div className="stu">ID: {this.props.ID} name: {"\t\t\t"+this.props.name} BD: {"    "+this.props.BD}
