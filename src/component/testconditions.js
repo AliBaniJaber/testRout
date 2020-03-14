@@ -20,28 +20,14 @@ function Users() {
 }
 
 
-
-
-
-
-
 class testconditions extends Component{
-
     constructor(props) {
         super(props);
         this.changetext=this.changetext.bind(this);
     }
-
-
     state={
         text:"ali"
     };
-
-
-
-
-
-
     changetext(event)
     {
         this.setState({text:event.target.value});
@@ -55,9 +41,6 @@ class testconditions extends Component{
         }
 
     }
-
-
-
     render(){
 
 
@@ -79,7 +62,6 @@ class testconditions extends Component{
 
        </div>
     }
-
 }
 
 export default testconditions;

@@ -7,7 +7,10 @@ import Lists from "./component/lists";
 import Condition from "./component/Conditions";
 import  Testcondtion from "./component/testconditions";
 import AppTodolist from "./Todolist/AppTodolist";
+import FormUsingFormik from "./formUsingFormik";
 
+
+import Form from "./form/form";
 
 function aliattr(){
  return <p> ali test function attr</p>
@@ -35,8 +38,9 @@ class App extends Component{
        {/*    <Lists/>*/}
        {/*    <Condition/>*/}
        {/*    <Testcondtion/>*/}
-       <AppTodolist/>
-
+       {/*<AppTodolist/>*/}
+       {/*<Form/>*/}
+       <FormUsingFormik/>
        </div>
 
    );
