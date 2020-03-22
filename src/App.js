@@ -8,7 +8,7 @@ import Condition from "./component/Conditions";
 import  Testcondtion from "./component/testconditions";
 import AppTodolist from "./Todolist/AppTodolist";
 import FormUsingFormik from "./formUsingFormik";
-
+import ClassNamePak from "./component/ClassNamePak";
 
 import Form from "./form/form";
 
@@ -41,6 +41,7 @@ class App extends Component{
        {/*<AppTodolist/>*/}
        {/*<Form/>*/}
        <FormUsingFormik/>
+       <ClassNamePak/>
        </div>
 
    );
