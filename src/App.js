@@ -9,7 +9,7 @@ import  Testcondtion from "./component/testconditions";
 import AppTodolist from "./Todolist/AppTodolist";
 import FormUsingFormik from "./formUsingFormik";
 import ClassNamePak from "./component/ClassNamePak";
-
+import AppAJAX from "./Ajax/App";
 import Form from "./form/form";
 
 function aliattr(){
@@ -40,8 +40,9 @@ class App extends Component{
        {/*    <Testcondtion/>*/}
        {/*<AppTodolist/>*/}
        {/*<Form/>*/}
-       <FormUsingFormik/>
+       {/*<FormUsingFormik/>*/}
        <ClassNamePak/>
+       {/*<AppAJAX/>*/}
        </div>
 
    );

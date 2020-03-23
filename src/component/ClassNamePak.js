@@ -18,11 +18,14 @@ async function getUsers()
 
 async function deleteuserapi(id)
 {
-
-        const response=await axios.delete("https://jsonplaceholder.typicode.com/users"+id);
-        console.log(response);
-        return response;
-
+try {
+    const response = await axios.delete("https://jsonplaceholder.typicode.com/users" + id);
+    console.log(response);
+    return response;
+}
+catch(e) {
+ console.error(e);
+}
 
 
 }
@@ -59,12 +62,12 @@ class ClassNamePak extends Component
         //delet from serveer
           deleteuserapi(user.id).then(()=>{
 
-            let users=this.state.users;
-            const index=users.indexOf(user);
-            users.splice(index,1);
-            this.setState({users});
+            let userss=this.state.users;
+            const index=userss.indexOf(user);
+            userss.splice(index,1);
+            this.setState({userss});
 
-        }).catch(error=>{alert("error")});
+           });
 
 
 
@@ -89,7 +92,7 @@ class ClassNamePak extends Component
             </ui>
         </div>
 
-            <div>{this.state.activ.id}</div>
+            <div>{this.state.activ.name}</div>
 
 
 
