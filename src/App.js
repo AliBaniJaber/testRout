@@ -11,7 +11,7 @@ import FormUsingFormik from "./formUsingFormik";
 import ClassNamePak from "./component/ClassNamePak";
 import AppAJAX from "./Ajax/App";
 import Form from "./form/form";
-
+import Formikform from "./formik/formik_25-31";
 function aliattr(){
  return <p> ali test function attr</p>
 }
@@ -41,8 +41,9 @@ class App extends Component{
        {/*<AppTodolist/>*/}
        {/*<Form/>*/}
        {/*<FormUsingFormik/>*/}
-       <ClassNamePak/>
+       {/*<ClassNamePak/>*/}
        {/*<AppAJAX/>*/}
+       <Formikform/>
        </div>
 
    );
