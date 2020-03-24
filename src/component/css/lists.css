@@ -1,0 +1,13 @@
+.list{
+    background: darkgray;
+    font-size: 20px;
+    width: 50%;
+    margin: 20px;
+    position: absolute;
+    top:300px;
+
+
+}
+.list li{
+    border-bottom: 1px saddlebrown solid;
+}
